@@ -377,76 +377,79 @@ const ComponentTemplates = {
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-image-wrapper">
-                    <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                    <img src="./assets/project-1.png" alt="Social Event Platform" class="project-img">
                     <div class="project-overlay">
                         <div class="project-links">
-                            <a href="https://github.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/sojibulislamrana/social-events-client" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
                             </a>
-                            <a href="https://github.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://social-events-platform-1fe94.web.app/upcoming-events" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <span>🔗</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="project-content">
-                    <h2 class="project-title">E-Commerce Platform</h2>
-                    <p class="project-description">A full-featured e-commerce platform with shopping cart, payment integration, and admin dashboard.</p>
+                    <h2 class="project-title">Social Event Platform</h2>
+                    <p class="project-description">A comprehensive social events platform for discovering, creating, and managing events with real-time updates and social features.</p>
                     <div class="project-tech">
                         <span class="tech-badge">React</span>
+                        <span class="tech-badge">Firebase</span>
                         <span class="tech-badge">Node.js</span>
-                        <span class="tech-badge">MongoDB</span>
                     </div>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('social-events')">View Details</button>
                 </div>
             </div>
             
             <div class="project-card">
                 <div class="project-image-wrapper">
-                    <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                    <img src="./assets/project-2.png" alt="hero.io" class="project-img">
                     <div class="project-overlay">
                         <div class="project-links">
-                            <a href="https://github.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/sojibulislamrana/hero.io" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
                             </a>
-                            <a href="https://github.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/sojibulislamrana/cardio" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <span>🔗</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="project-content">
-                    <h2 class="project-title">Task Management App</h2>
-                    <p class="project-description">A collaborative task management application with real-time updates and team collaboration features.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">Express</span>
-                        <span class="tech-badge">PostgreSQL</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-image-wrapper">
-                    <img src="./assets/project-3.png" alt="Project 3" class="project-img">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://github.com/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
-                            </a>
-                            <a href="https://github.com/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <span>🔗</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h2 class="project-title">Weather Dashboard</h2>
-                    <p class="project-description">A beautiful weather dashboard with location-based forecasts and interactive charts.</p>
+                    <h2 class="project-title">hero.io</h2>
+                    <p class="project-description">An interactive hero-based application with dynamic features and engaging user interface for enhanced user experience.</p>
                     <div class="project-tech">
                         <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">API</span>
-                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
                     </div>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('hero-io')">View Details</button>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="./assets/project-3.png" alt="StyleDecor" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/sojibulislamrana/styleDecor-C.git" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
+                            </a>
+                            <a href="https://style-decor-532c3.web.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <span>🔗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">StyleDecor</h2>
+                    <p class="project-description">An elegant interior design and decoration platform showcasing beautiful home styling solutions and design inspirations.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">CSS3</span>
+                    </div>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('style-decor')">View Details</button>
                 </div>
             </div>
         </div>
@@ -472,8 +475,19 @@ const ComponentTemplates = {
                     </div>
                     <div class="contact-details">
                         <h4>Email</h4>
-                        <p><a href="mailto:sojibulislam@example.com">sojibulislam@example.com</a></p>
+                        <p><a href="mailto:sojibulislamrana.dev@gmail.com">sojibulislamrana.dev@gmail.com</a></p>
                         <span class="contact-note">Best for detailed discussions</span>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon-wrapper">
+                        <span class="contact-icon-text">📱</span>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+8801960629911">+880 196 062 9911</a></p>
+                        <span class="contact-note">Available 9 AM - 6 PM (GMT+6)</span>
                     </div>
                 </div>
                 
@@ -483,7 +497,7 @@ const ComponentTemplates = {
                     </div>
                     <div class="contact-details">
                         <h4>LinkedIn</h4>
-                        <p><a href="https://www.linkedin.com">Connect with me</a></p>
+                        <p><a href="https://www.linkedin.com/in/sojibulislamrana/">Connect with me</a></p>
                         <span class="contact-note">Professional networking</span>
                     </div>
                 </div>
@@ -494,7 +508,7 @@ const ComponentTemplates = {
                     </div>
                     <div class="contact-details">
                         <h4>GitHub</h4>
-                        <p><a href="https://github.com">View my code</a></p>
+                        <p><a href="https://github.com/sojibulislamrana">View my code</a></p>
                         <span class="contact-note">Check out my projects</span>
                     </div>
                 </div>
@@ -547,14 +561,17 @@ const ComponentTemplates = {
                     Let's build something amazing together.
                 </p>
                 <div class="footer-social-new">
-                    <a href="https://linkedin.com/" class="social-link-new" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/sojibulislamrana/" class="social-link-new" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                         <img src="./assets/linkedin.png" alt="LinkedIn">
                     </a>
-                    <a href="https://github.com/" class="social-link-new" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/sojibulislamrana" class="social-link-new" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                         <img src="./assets/github.png" alt="GitHub">
                     </a>
-                    <a href="mailto:sojibulislam@example.com" class="social-link-new" aria-label="Email">
+                    <a href="mailto:sojibulislamrana.dev@gmail.com" class="social-link-new" aria-label="Email">
                         <img src="./assets/email.png" alt="Email">
+                    </a>
+                    <a href="tel:+8801960629911" class="social-link-new" aria-label="Phone">
+                        <span class="social-icon-text">📱</span>
                     </a>
                 </div>
             </div>

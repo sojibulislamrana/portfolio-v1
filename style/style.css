@@ -438,6 +438,13 @@ section{
     display: none;
 }
 
+#socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 /* Icon */
 
 .icon{
@@ -1782,4 +1789,242 @@ footer nav {
 /* About section icons */
 [data-theme="dark"] .details-container .icon {
     filter: brightness(0) invert(1);
+}
+/* Project Details Button */
+.project-details-btn {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* Project Detail Pages */
+.project-detail-section {
+    padding: 8rem 2rem 4rem;
+    min-height: 100vh;
+    background: var(--container-bg);
+}
+
+.project-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.back-btn {
+    background: var(--border-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: var(--text-color);
+    color: var(--container-bg);
+    transform: translateX(-5px);
+}
+
+.project-detail-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-detail-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.project-detail-image {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 8px 32px var(--shadow-color);
+}
+
+.project-detail-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-detail-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.project-detail-info h2 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.project-detail-info p {
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-detail-info ul {
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-detail-info li {
+    margin-bottom: 0.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.project-links-section {
+    background: var(--border-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    height: fit-content;
+    position: sticky;
+    top: 2rem;
+}
+
+.project-links-section h2 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.project-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-action-buttons .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Design for Project Details */
+@media screen and (max-width: 1200px) {
+    .project-detail-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .project-links-section {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-detail-section {
+        padding: 6rem 1rem 2rem;
+    }
+    
+    .project-detail-title {
+        font-size: 2rem;
+    }
+    
+    .project-action-buttons {
+        flex-direction: column;
+    }
+}
+/* Contact Icon Text Styling */
+.contact-icon-text {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+}
+/* About Section Additional Styling */
+.about-subtitle-small {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+}
+/* Footer Social Icon Text Styling */
+.social-icon-text {
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+/* Dark Theme Fixes for Project Detail Pages */
+[data-theme="dark"] .back-btn {
+    background: var(--text-color);
+    color: var(--container-bg);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .back-btn:hover {
+    background: var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .project-action-buttons .btn {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .project-action-buttons .btn-color-1 {
+    background: var(--text-color);
+    color: var(--container-bg);
+    border: 1px solid var(--text-color);
+}
+
+[data-theme="dark"] .project-action-buttons .btn-color-1:hover {
+    background: transparent;
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .project-action-buttons .btn-color-2 {
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+[data-theme="dark"] .project-action-buttons .btn-color-2:hover {
+    background: var(--text-color);
+    color: var(--container-bg);
+}
+
+/* Light Theme Fixes for Project Detail Pages */
+.back-btn {
+    color: var(--container-bg);
+}
+
+.project-action-buttons .btn-color-1 {
+    color: white;
+}
+
+.project-action-buttons .btn-color-2 {
+    color: var(--text-color);
 }

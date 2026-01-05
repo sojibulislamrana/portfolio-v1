@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Event Platform - Sojibul Islam Rana</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sojibul Islam</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="theme-switcher" onclick="toggleTheme()">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Sojibul Islam</div>
+        <div class="hamburger-menu">
+            <div class="theme-switcher mobile" onclick="toggleTheme()">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail-section">
+        <div class="project-detail-container">
+            <button class="back-btn" onclick="history.back()">← Back to Projects</button>
+            
+            <div class="project-detail-header">
+                <h1 class="project-detail-title">Social Event Platform</h1>
+                <div class="project-detail-image">
+                    <img src="./assets/project-1.png" alt="Social Event Platform">
+                </div>
+            </div>
+
+            <div class="project-detail-content">
+                <div class="project-detail-info">
+                    <h2>Main Technology Stack</h2>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Socket.io</span>
+                        <span class="tech-badge">Material-UI</span>
+                    </div>
+
+                    <h2>Project Description</h2>
+                    <p>A comprehensive social events platform that connects people through shared interests and experiences. This full-stack application enables users to discover, create, and manage events while fostering community engagement through real-time interactions, event recommendations, and social networking features.</p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Event discovery with advanced search and filtering capabilities</li>
+                        <li>Real-time event creation and management system</li>
+                        <li>User authentication and profile management</li>
+                        <li>Interactive event calendar and scheduling</li>
+                        <li>Social features including event sharing and invitations</li>
+                        <li>Real-time notifications and updates</li>
+                        <li>Event analytics and attendance tracking</li>
+                        <li>Responsive design optimized for all devices</li>
+                    </ul>
+
+                    <h2>Challenges Faced</h2>
+                    <ul>
+                        <li><strong>Real-time Synchronization:</strong> Implementing real-time event updates across multiple users while maintaining data consistency and performance.</li>
+                        <li><strong>Scalable Architecture:</strong> Designing a scalable system architecture to handle growing user base and concurrent event activities.</li>
+                        <li><strong>Complex Event Logic:</strong> Managing complex event scheduling, recurring events, and timezone handling for global users.</li>
+                        <li><strong>User Experience:</strong> Creating an intuitive interface that balances feature richness with simplicity for diverse user demographics.</li>
+                        <li><strong>Performance Optimization:</strong> Optimizing database queries and implementing efficient caching strategies for fast event loading.</li>
+                    </ul>
+
+                    <h2>Future Improvements</h2>
+                    <ul>
+                        <li>Implement AI-powered event recommendations based on user preferences</li>
+                        <li>Add integrated payment system for paid events</li>
+                        <li>Develop mobile applications for iOS and Android</li>
+                        <li>Integrate with popular calendar applications (Google Calendar, Outlook)</li>
+                        <li>Add advanced analytics dashboard for event organizers</li>
+                        <li>Implement video streaming capabilities for virtual events</li>
+                        <li>Add multi-language support for global accessibility</li>
+                    </ul>
+                </div>
+
+                <div class="project-links-section">
+                    <h2>Project Links</h2>
+                    <div class="project-action-buttons">
+                        <a href="https://github.com/sojibulislamrana/social-events-client" class="btn btn-color-2" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+                            View Code
+                        </a>
+                        <a href="https://social-events-platform-1fe94.web.app/upcoming-events" class="btn btn-color-1" target="_blank" rel="noopener noreferrer">
+                            🔗 Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

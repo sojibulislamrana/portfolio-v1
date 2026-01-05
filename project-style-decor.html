@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleDecor - Sojibul Islam Rana</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sojibul Islam</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="theme-switcher" onclick="toggleTheme()">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Sojibul Islam</div>
+        <div class="hamburger-menu">
+            <div class="theme-switcher mobile" onclick="toggleTheme()">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail-section">
+        <div class="project-detail-container">
+            <button class="back-btn" onclick="history.back()">← Back to Projects</button>
+            
+            <div class="project-detail-header">
+                <h1 class="project-detail-title">StyleDecor</h1>
+                <div class="project-detail-image">
+                    <img src="./assets/project-3.png" alt="StyleDecor">
+                </div>
+            </div>
+
+            <div class="project-detail-content">
+                <div class="project-detail-info">
+                    <h2>Main Technology Stack</h2>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">React Router</span>
+                        <span class="tech-badge">Firebase Auth</span>
+                        <span class="tech-badge">Firestore</span>
+                    </div>
+
+                    <h2>Project Description</h2>
+                    <p>Style Decor is an elegant interior design and decoration platform that showcases beautiful home styling solutions and design inspirations. This React-based application provides users with a comprehensive platform to explore interior design ideas, browse decoration collections, and connect with design professionals for their home improvement projects.</p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Comprehensive interior design gallery with categorized collections</li>
+                        <li>User authentication and personalized design preferences</li>
+                        <li>Interactive design showcase with detailed project information</li>
+                        <li>Responsive design optimized for all devices and screen sizes</li>
+                        <li>Real-time data synchronization with Firebase backend</li>
+                        <li>Advanced search and filtering capabilities for design styles</li>
+                        <li>User-friendly interface with smooth navigation and animations</li>
+                        <li>Contact system for connecting with design professionals</li>
+                    </ul>
+
+                    <h2>Challenges Faced</h2>
+                    <ul>
+                        <li><strong>Design System Implementation:</strong> Creating a cohesive and scalable design system that reflects the aesthetic nature of interior design while maintaining usability.</li>
+                        <li><strong>Image Optimization:</strong> Implementing efficient image loading and optimization strategies to handle high-quality design images without compromising performance.</li>
+                        <li><strong>Firebase Integration:</strong> Structuring Firestore database efficiently to handle complex design data relationships and user interactions.</li>
+                        <li><strong>Responsive Gallery Layout:</strong> Creating a flexible gallery layout that showcases design images beautifully across different screen sizes and orientations.</li>
+                        <li><strong>User Experience Flow:</strong> Designing intuitive user flows that guide visitors through the design exploration process seamlessly.</li>
+                    </ul>
+
+                    <h2>Future Improvements</h2>
+                    <ul>
+                        <li>Implement AI-powered design recommendation system</li>
+                        <li>Add virtual room visualization and AR features</li>
+                        <li>Integrate e-commerce functionality for design products</li>
+                        <li>Add designer portfolio and booking system</li>
+                        <li>Implement social features for design sharing and collaboration</li>
+                        <li>Add advanced project management tools for designers</li>
+                        <li>Integrate with popular design tools and platforms</li>
+                    </ul>
+                </div>
+
+                <div class="project-links-section">
+                    <h2>Project Links</h2>
+                    <div class="project-action-buttons">
+                        <a href="https://github.com/sojibulislamrana/styleDecor-C.git" class="btn btn-color-2" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+                            View Code
+                        </a>
+                        <a href="https://style-decor-532c3.web.app/" class="btn btn-color-1" target="_blank" rel="noopener noreferrer">
+                            🔗 Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

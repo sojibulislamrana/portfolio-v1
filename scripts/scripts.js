@@ -8,6 +8,18 @@ function toggleMenu(){
     }
 }
 
+function openProjectDetails(projectId) {
+    const projectPages = {
+        'social-events': 'project-social-events.html',
+        'hero-io': 'project-hero-io.html',
+        'style-decor': 'project-style-decor.html'
+    };
+    
+    if (projectPages[projectId]) {
+        window.location.href = projectPages[projectId];
+    }
+}
+
 function toggleTheme() {
     const body = document.body;
     const themeIcons = document.querySelectorAll('.theme-icon');

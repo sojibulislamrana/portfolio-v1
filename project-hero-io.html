@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hero.io - Sojibul Islam Rana</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sojibul Islam</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="theme-switcher" onclick="toggleTheme()">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Sojibul Islam</div>
+        <div class="hamburger-menu">
+            <div class="theme-switcher mobile" onclick="toggleTheme()">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail-section">
+        <div class="project-detail-container">
+            <button class="back-btn" onclick="history.back()">← Back to Projects</button>
+            
+            <div class="project-detail-header">
+                <h1 class="project-detail-title">hero.io</h1>
+                <div class="project-detail-image">
+                    <img src="./assets/project-2.png" alt="hero.io">
+                </div>
+            </div>
+
+            <div class="project-detail-content">
+                <div class="project-detail-info">
+                    <h2>Main Technology Stack</h2>
+                    <div class="tech-stack">
+                        <span class="tech-badge">JavaScript (ES6+)</span>
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">Canvas API</span>
+                        <span class="tech-badge">Web APIs</span>
+                        <span class="tech-badge">Local Storage</span>
+                        <span class="tech-badge">Responsive Design</span>
+                    </div>
+
+                    <h2>Project Description</h2>
+                    <p>Hero.io is an interactive web-based application that showcases dynamic hero characters and engaging gameplay mechanics. Built with vanilla JavaScript and modern web technologies, this project demonstrates advanced DOM manipulation, animation techniques, and interactive user experiences without relying on external frameworks.</p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Interactive hero character system with dynamic animations</li>
+                        <li>Smooth gameplay mechanics and user controls</li>
+                        <li>Responsive design that works across all device sizes</li>
+                        <li>Advanced CSS animations and transitions</li>
+                        <li>Local storage for game progress and user preferences</li>
+                        <li>Optimized performance with efficient rendering</li>
+                        <li>Clean, modern UI with intuitive navigation</li>
+                        <li>Cross-browser compatibility and accessibility features</li>
+                    </ul>
+
+                    <h2>Challenges Faced</h2>
+                    <ul>
+                        <li><strong>Performance Optimization:</strong> Implementing smooth animations and interactions while maintaining 60fps performance across different devices.</li>
+                        <li><strong>Cross-browser Compatibility:</strong> Ensuring consistent behavior and appearance across different browsers and their varying JavaScript engine implementations.</li>
+                        <li><strong>State Management:</strong> Managing complex application state without external libraries, implementing custom state management patterns.</li>
+                        <li><strong>Animation Synchronization:</strong> Coordinating multiple animations and ensuring they work harmoniously together without conflicts.</li>
+                        <li><strong>Mobile Responsiveness:</strong> Adapting interactive elements and touch controls for mobile devices while maintaining the desktop experience.</li>
+                    </ul>
+
+                    <h2>Future Improvements</h2>
+                    <ul>
+                        <li>Add multiplayer functionality with WebSocket integration</li>
+                        <li>Implement progressive web app (PWA) features for offline play</li>
+                        <li>Add sound effects and background music</li>
+                        <li>Integrate leaderboard system with backend API</li>
+                        <li>Add more hero characters with unique abilities</li>
+                        <li>Implement advanced graphics with WebGL</li>
+                        <li>Add social sharing features and achievements system</li>
+                    </ul>
+                </div>
+
+                <div class="project-links-section">
+                    <h2>Project Links</h2>
+                    <div class="project-action-buttons">
+                        <a href="https://github.com/sojibulislamrana/hero.io" class="btn btn-color-2" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+                            View Code
+                        </a>
+                        <a href="https://github.com/sojibulislamrana/cardio" class="btn btn-color-1" target="_blank" rel="noopener noreferrer">
+                            🔗 Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
