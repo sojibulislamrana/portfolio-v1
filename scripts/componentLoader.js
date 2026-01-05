@@ -84,12 +84,12 @@ const ComponentTemplates = {
                 <p>B.Sc. Computer Science<br>Software Engineering</p>
             </div>
             <div class="details-container">
-                <div class="stat-icon-large">🚀</div>
+                <img src="./assets/checkmark.png" alt="Projects icon" class="icon">
                 <h3>Projects</h3>
                 <p>50+ Projects<br>Completed</p>
             </div>
             <div class="details-container">
-                <div class="stat-icon-large">💡</div>
+                <img src="./assets/checkmark.png" alt="Technologies icon" class="icon">
                 <h3>Technologies</h3>
                 <p>15+ Technologies<br>Mastered</p>
             </div>
@@ -97,17 +97,17 @@ const ComponentTemplates = {
 
         <div class="about-highlights-section">
             <div class="details-container highlight-container">
-                <div class="highlight-icon-large">🎯</div>
+                <img src="./assets/checkmark.png" alt="Mission icon" class="icon">
                 <h3>Mission</h3>
                 <p>Creating digital solutions that make a difference</p>
             </div>
             <div class="details-container highlight-container">
-                <div class="highlight-icon-large">💡</div>
+                <img src="./assets/checkmark.png" alt="Vision icon" class="icon">
                 <h3>Vision</h3>
                 <p>Building the future of web technology</p>
             </div>
             <div class="details-container highlight-container">
-                <div class="highlight-icon-large">⚡</div>
+                <img src="./assets/checkmark.png" alt="Approach icon" class="icon">
                 <h3>Approach</h3>
                 <p>Fast, scalable, and user-centered development</p>
             </div>
