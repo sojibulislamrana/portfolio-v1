@@ -2,8 +2,10 @@ function toggleMenu(){
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
 
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+    if (menu && icon) {
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+    }
 }
 
 function toggleTheme() {
@@ -27,12 +29,14 @@ function handleNavbarScroll() {
     const hamburgerNav = document.getElementById('hamburger-nav');
     const scrollY = window.scrollY;
     
-    if (scrollY > 100) {
-        desktopNav.classList.add('scrolled');
-        hamburgerNav.classList.add('scrolled');
-    } else {
-        desktopNav.classList.remove('scrolled');
-        hamburgerNav.classList.remove('scrolled');
+    if (desktopNav && hamburgerNav) {
+        if (scrollY > 100) {
+            desktopNav.classList.add('scrolled');
+            hamburgerNav.classList.add('scrolled');
+        } else {
+            desktopNav.classList.remove('scrolled');
+            hamburgerNav.classList.remove('scrolled');
+        }
     }
 }
 
@@ -115,24 +119,34 @@ function handleContactForm(event) {
 // Load saved theme on page load
 document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme');
-    const themeIcons = document.querySelectorAll('.theme-icon');
     
     if (savedTheme === 'dark') {
         document.body.setAttribute('data-theme', 'dark');
-        themeIcons.forEach(icon => icon.textContent = '☀️');
-    } else {
-        themeIcons.forEach(icon => icon.textContent = '🌙');
     }
     
-    // Add contact form event listener
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', handleContactForm);
-    }
+    // Initialize theme icons after components load
+    setTimeout(() => {
+        const themeIcons = document.querySelectorAll('.theme-icon');
+        if (savedTheme === 'dark') {
+            themeIcons.forEach(icon => icon.textContent = '☀️');
+        } else {
+            themeIcons.forEach(icon => icon.textContent = '🌙');
+        }
+    }, 300);
+    
+    // Add contact form event listener after components load
+    setTimeout(() => {
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', handleContactForm);
+        }
+    }, 300);
     
     // Add scroll event listener for navbar
     window.addEventListener('scroll', handleNavbarScroll);
     
-    // Initial check for navbar state
-    handleNavbarScroll();
+    // Initial check for navbar state after components load
+    setTimeout(() => {
+        handleNavbarScroll();
+    }, 300);
 });

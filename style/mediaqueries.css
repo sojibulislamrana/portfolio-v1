@@ -1,8 +1,47 @@
+/* Tablet Landscape */
+@media screen and (max-width: 1400px) and (min-width: 1201px) {
+    #profile {
+        height: 100vh;
+        min-height: 100vh;
+        gap: 4rem;
+        padding-top: calc(17vh + 2rem);
+    }
+    .section_pic-container {
+        width: 400px;
+        height: 400px;
+    }
+    .about-content-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    .about-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-highlights-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-interests-section .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-content-new {
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .footer-links-new {
+        gap: 2rem;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     #profile {
-        height: auto;
-        margin-bottom: 2rem;
+        height: 100vh;
+        min-height: 100vh;
+        margin-bottom: 0;
         padding: 3rem 1rem;
+        padding-top: calc(80px + 2rem);
     }
     .about-containers {
         flex-wrap: wrap;
@@ -15,17 +54,26 @@
     .btn-container {
         flex-wrap: wrap;
     }
-    footer .footer-content {
-        grid-template-columns: 1fr 1fr;
+    .footer-content-new {
+        flex-direction: row;
+        gap: 3rem;
+    }
+    
+    .footer-links-new {
         gap: 2rem;
     }
     section {
         padding-left: 1rem;
         padding-right: 1rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
     body {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+    }
+    #about, #experience, #projects, #contact {
+        padding-top: 5rem;
     }
 }
 
@@ -37,12 +85,12 @@
         display: flex;
     }
     body {
-        padding-top: 80px;
+        padding-top: 0;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
     #experience, .experience-details-container {
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     #profile, .section-container {
         display: block;
@@ -51,6 +99,9 @@
         flex-direction: column;
         gap: 3rem;
         text-align: center;
+        height: 100vh;
+        min-height: 100vh;
+        padding: 2rem 1rem;
     }
     .arrow {
         display: none;
@@ -62,16 +113,62 @@
         margin: 0 auto;
         padding-left: 1rem;
         padding-right: 1rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    #about, #experience, #projects, #contact {
+        padding-top: 5rem;
     }
     .section_pic-container {
         width: 300px;
         height: 300px;
         margin: 0 auto 1rem;
     }
+    .about-content-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .about-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .about-highlights-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .about-interests-section .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .footer-links-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
     .about-containers {
-        margin-top: 0;
+        margin-top: 2rem;
         flex-direction: column;
         align-items: center;
+        gap: 1.5rem;
     }
     .about-containers .details-container {
         flex: none;
@@ -83,15 +180,81 @@
     }
     .cv-timeline-item {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
+        padding: 1.25rem;
+        overflow: hidden;
+        word-wrap: break-word;
+        box-sizing: border-box;
+        width: 100%;
     }
+    
     .cv-timeline-date {
         min-width: auto;
-        text-align: left;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .cv-timeline-content {
+        width: 100%;
+        overflow: hidden;
+        word-wrap: break-word;
+        box-sizing: border-box;
+    }
+    
+    .cv-job-header {
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+    
+    .cv-job-title {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        font-size: 1.2rem;
+    }
+    
+    .cv-company-info {
+        flex-wrap: wrap;
+        word-wrap: break-word;
+    }
+    
+    .cv-job-description {
+        overflow: hidden;
+        word-wrap: break-word;
+        box-sizing: border-box;
+    }
+    
+    .cv-job-description ul {
+        overflow: hidden;
+        word-wrap: break-word;
+        padding-left: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .cv-job-description li {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .cv-technologies {
+        flex-wrap: wrap;
+        overflow: hidden;
+        gap: 0.4rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+        word-wrap: break-word;
     }
     .about-highlights {
         flex-direction: column;
         align-items: center;
+        gap: 1.5rem;
     }
     .highlight-item {
         width: 100%;
@@ -100,25 +263,114 @@
     .interests-grid {
         flex-direction: column;
         align-items: center;
+        gap: 1.5rem;
     }
     .interest-item {
         width: 100%;
         max-width: 400px;
     }
+    .about-main-content {
+        margin: 2rem auto 1rem;
+        gap: 2.5rem;
+    }
+    .about-extra-content {
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    .stats-container {
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+    }
+    .interests-container {
+        margin: 0 auto;
+    }
+    .timeline-section {
+        margin: 4rem auto 3rem;
+    }
+    .tools-section {
+        margin: 4rem auto 3rem;
+    }
+    .contact-main-container {
+        margin: 2rem auto 1rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
+    #hamburger-nav {
+        height: 70px;
+        padding: 0.75rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #hamburger-nav .logo {
+        font-size: 1.3rem;
+    }
+    
     #contact, footer {
         height: auto;
     }
+    
     #profile {
-        height: auto;
-        margin-bottom: 1rem;
-        padding: 2rem 0.5rem;
-        gap: 2rem;
+        height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
+        margin-bottom: 0;
+        padding: 0;
+        padding-top: calc(70px + 0.75rem);
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0;
+        gap: 0.75rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    #profile .section_pic-container {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        width: 200px;
+        height: 200px;
+    }
+    
+    #profile .section_text {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #profile .title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    #profile .section_text_p1 {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    #profile .section_text_p2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    #profile .btn-container {
+        margin-top: 0.75rem;
+        margin-bottom: 0;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+    
+    #profile .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
+        min-width: auto;
     }
     body {
-        padding-top: 70px;
+        padding-top: 0;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
@@ -138,13 +390,29 @@
     article {
         font-size: 1rem;
     }
-    footer .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    .footer-content-new {
+        flex-direction: column;
+        gap: 2.5rem;
         text-align: center;
     }
-    footer .social-links {
+    
+    .footer-brand-new {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .footer-social-new {
         justify-content: center;
+    }
+    
+    .footer-links-new {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .footer-column-new {
+        text-align: center;
     }
     .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
@@ -153,11 +421,75 @@
         width: 100%;
         max-width: none;
         min-width: auto;
+        padding: 1.25rem;
+        box-sizing: border-box;
+        overflow: hidden;
+        word-wrap: break-word;
     }
+    
+    .details-container h3,
+    .details-container p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        margin: 0;
+    }
+    
+    .details-container h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .details-container p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .about-containers {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        gap: 1.5rem;
+    }
+    
     .about-containers .details-container {
         width: 100%;
         max-width: none;
         min-width: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .about-highlights-section {
+        width: 100%;
+        box-sizing: border-box;
+        gap: 1.5rem;
+    }
+    
+    .about-highlights-section .details-container {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .experience-details-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    
+    .experience-details-container .about-containers {
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .experience-details-container .details-container {
+        width: 100%;
+        max-width: none;
+        min-width: auto;
+        box-sizing: border-box;
+        overflow: hidden;
     }
     .project-img {
         height: 160px;
@@ -175,6 +507,7 @@
     }
     .experience-sub-title {
         font-size: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     .logo {
         font-size: 1.5rem;
@@ -189,24 +522,149 @@
     }
     section {
         margin: 0 auto;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    #about, #experience, #projects, #contact {
+        padding-top: 4rem;
     }
     .about-subtitle {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
     .about-description {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0 0.5rem;
     }
-    .stats-container {
-        flex-direction: column;
-        align-items: center;
+    .about-main-content {
+        margin: 2rem auto 1rem;
+        gap: 2rem;
+    }
+    .about-intro {
+        margin-bottom: 2rem;
+    }
+    .about-highlights {
+        margin: 2rem auto 1.5rem;
         gap: 1rem;
+    }
+    .highlight-item {
+        width: 100%;
+        max-width: none;
+        min-width: auto;
+        padding: 1.25rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+    .highlight-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    .about-main-text {
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+    }
+    
+    .about-containers {
+        gap: 1.5rem;
+    }
+    
+    .about-highlights-section {
+        gap: 1.5rem;
+    }
+    
+    .details-container {
+        padding: 1.25rem;
+        min-width: auto;
+        max-width: 100%;
+    }
+    
+    .experience-details-container .details-container {
+        padding: 1.25rem;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+    
+    .article-container {
+        gap: 1rem;
+        overflow: hidden;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    article {
+        min-width: 0;
+        flex: 1 1 auto;
+        max-width: 100%;
+        overflow: hidden;
+        word-wrap: break-word;
+        box-sizing: border-box;
+        padding: 0.5rem;
+    }
+    
+    article h3,
+    article p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        font-size: 0.9rem;
+        margin: 0;
+    }
+    
+    article .icon {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .project-image-wrapper {
+        height: 200px;
+    }
+    
+    .footer-content-new {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    
+    .footer-brand-new {
+        max-width: 100%;
+    }
+    
+    .footer-links-new {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    
+    .footer-column-new {
+        width: 100%;
     }
     .stat-item {
         width: 100%;
         max-width: 200px;
+        padding: 0.75rem;
+    }
+    .stat-number {
+        font-size: 2.2rem;
+    }
+    .stat-label {
+        font-size: 1rem;
+    }
+    .interests-container {
+        margin: 2rem auto 1.5rem;
+    }
+    .interests-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
     }
     .interests-grid {
         gap: 1rem;
@@ -215,13 +673,59 @@
         width: 100%;
         max-width: none;
         min-width: auto;
+        padding: 1.5rem;
+    }
+    .interest-icon {
+        font-size: 2.5rem;
+    }
+    .interest-item h4 {
+        font-size: 1.1rem;
+    }
+    .interest-item p {
+        font-size: 0.9rem;
     }
     .tools-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .tool-category {
+        padding: 1.5rem;
+    }
+    .tool-category h3 {
+        font-size: 1.1rem;
+    }
+    .timeline-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .cv-timeline-item {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .cv-job-title {
+        font-size: 1.3rem;
+    }
+    .cv-job-description li {
+        font-size: 0.9rem;
+        padding-left: 1.25rem;
+    }
+    .tools-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
     }
     .contact-main-container {
         grid-template-columns: 1fr;
         gap: 2rem;
+        margin: 2rem auto 1rem;
+    }
+    .contact-info-section {
+        padding: 1rem;
+    }
+    .contact-intro h3 {
+        font-size: 1.6rem;
+    }
+    .contact-intro p {
+        font-size: 1rem;
     }
     .contact-methods {
         gap: 1rem;
@@ -230,17 +734,33 @@
         flex-direction: column;
         text-align: center;
         gap: 1rem;
+        padding: 1.25rem;
+    }
+    .contact-form-section {
+        padding: 1.5rem;
+    }
+    .contact-form-section h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .contact-availability {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 2rem auto 1rem;
     }
     .availability-item {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        justify-content: center;
     }
     .toast {
         right: 10px;
         left: 10px;
         min-width: auto;
         transform: translateY(-100px);
+        padding: 0.75rem 1rem;
     }
     .toast.show {
         transform: translateY(0);
@@ -250,9 +770,21 @@
         min-width: 8rem;
         font-size: 1rem;
     }
-    .highlight-item {
+    .btn-container {
+        gap: 1rem;
+    }
+    footer {
+        padding: 3rem 1rem 1.5rem;
+        margin-top: 4rem;
+    }
+    .experience-details-container {
+        margin: 1.5rem auto 2rem;
+    }
+    .article-container {
+        gap: 1.5rem;
+    }
+    article {
         width: 100%;
-        max-width: none;
-        min-width: auto;
+        max-width: 200px;
     }
 }
