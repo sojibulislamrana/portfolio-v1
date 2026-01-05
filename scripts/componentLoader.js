@@ -1,7 +1,7 @@
 // Component Templates - Embedded to avoid CORS issues
 const ComponentTemplates = {
     navbar: `<nav id="desktop-nav">
-    <div class="logo">Sojibul Islam</div>
+    <div class="logo" onclick="location.href='#'">Sojibul Islam</div>
     <div class="nav-right">
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -19,7 +19,7 @@ const ComponentTemplates = {
     </div>
 </nav>
 <nav id="hamburger-nav">
-    <div class="logo">Sojibul Islam</div>
+    <div class="logo" onclick="location.href='#'">Sojibul Islam</div>
     <div class="hamburger-menu">
         <div class="theme-switcher mobile" onclick="toggleTheme()">
             <div class="theme-toggle-switch">
@@ -52,7 +52,7 @@ const ComponentTemplates = {
         <p class="section_text_p2">Full Stack Developer</p>
         <div class="btn-container">
             <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
         </div>
     </div>
 </section>`,
@@ -115,7 +115,7 @@ const ComponentTemplates = {
 
     </div>
     
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
 </section>`,
 
     experience: `<section id="experience">
@@ -367,7 +367,7 @@ const ComponentTemplates = {
         </div>
     </div>
     
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
 </section>`,
 
     projects: `<section id="projects">
@@ -454,7 +454,7 @@ const ComponentTemplates = {
             </div>
         </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
 </section>`,
 
     contact: `<section id="contact">

@@ -2028,3 +2028,12 @@ footer nav {
 .project-action-buttons .btn-color-2 {
     color: var(--text-color);
 }
+/* Make logo clickable */
+.logo {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
