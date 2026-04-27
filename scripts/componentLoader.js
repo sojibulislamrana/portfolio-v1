@@ -1,6 +1,6 @@
 // Component Templates - Embedded to avoid CORS issues
 const ComponentTemplates = {
-    navbar: `<nav id="desktop-nav">
+  navbar: `<nav id="desktop-nav">
     <div class="logo" onclick="location.href='#'">Sojibul Islam</div>
     <div class="nav-right">
         <ul class="nav-links">
@@ -42,7 +42,7 @@ const ComponentTemplates = {
     </div>
 </nav>`,
 
-    hero: `<section id="profile">
+  hero: `<section id="profile">
     <div class="section_pic-container">
         <img src="./assets/RanaBW.png" alt="Profile pic">
     </div>
@@ -57,7 +57,7 @@ const ComponentTemplates = {
     </div>
 </section>`,
 
-    about: `<section id="about">
+  about: `<section id="about">
     <p class="section_text_p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     
@@ -118,7 +118,7 @@ const ComponentTemplates = {
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
 </section>`,
 
-    experience: `<section id="experience">
+  experience: `<section id="experience">
     <p class="section_text_p1">Explore My</p>
     <h1 class="title">Experience</h1>
     
@@ -228,95 +228,130 @@ const ComponentTemplates = {
         <div class="cv-timeline">
             <div class="cv-timeline-item">
                 <div class="cv-timeline-date">
-                    <span class="date-range">2022 - Present</span>
-                    <span class="duration">2+ years</span>
+                    <span class="date-range">12-2024 / 12-2025</span>
+                    <span class="duration">1 year</span>
                 </div>
                 <div class="cv-timeline-content">
                     <div class="cv-job-header">
-                        <h3 class="cv-job-title">Senior Full Stack Developer</h3>
+                        <h3 class="cv-job-title">Full Stack Developer</h3>
                         <div class="cv-company-info">
-                            <span class="cv-company">Tech Solutions Inc.</span>
-                            <span class="cv-location">San Francisco, CA</span>
+                            <span class="cv-company">Soft Engine Lab</span>
+                            <span class="cv-location">Rohomotput, Mymensingh</span>
                         </div>
                     </div>
                     <div class="cv-job-description">
                         <ul>
-                            <li>Led development of 5+ enterprise web applications using React, Node.js, and MongoDB</li>
-                            <li>Improved application performance by 40% through code optimization and caching strategies</li>
-                            <li>Mentored 3 junior developers and established code review processes</li>
-                            <li>Collaborated with cross-functional teams to deliver projects 20% ahead of schedule</li>
-                            <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+                            <li>Worked as a Full Stack Developer, building and maintaining web applications using React,
+                                Node.js, and MongoDB
+                            </li>
+                            <li>Developed responsive front-end interfaces and integrated them with backend APIs</li>
+                            <li>Contributed to backend development, including API design, database handling, and
+                                server-side logic</li>
+                            <li>Deployed and managed applications on production environments, handling basic DevOps
+                                tasks</li>
+                            <li>Collaborated with team members to debug issues, improve performance, and deliver
+                                features on time</li>
                         </ul>
                     </div>
                     <div class="cv-technologies">
                         <span class="tech-tag">React</span>
+                        <span class="tech-tag">Next.js</span>
                         <span class="tech-tag">Node.js</span>
                         <span class="tech-tag">MongoDB</span>
                         <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Docker</span>
                     </div>
                 </div>
             </div>
 
             <div class="cv-timeline-item">
                 <div class="cv-timeline-date">
-                    <span class="date-range">2021 - 2022</span>
-                    <span class="duration">1 year</span>
+                    <span class="date-range">05-2024 / 09-2024</span>
+                    <span class="duration">5 months</span>
                 </div>
                 <div class="cv-timeline-content">
                     <div class="cv-job-header">
-                        <h3 class="cv-job-title">Frontend Developer</h3>
+                        <h3 class="cv-job-title">Opensource Contribution</h3>
                         <div class="cv-company-info">
-                            <span class="cv-company">Digital Agency Pro</span>
-                            <span class="cv-location">New York, NY</span>
+                            <span class="cv-company">Kubernetes</span>
+                            <span class="cv-location">Opensource</span>
                         </div>
                     </div>
                     <div class="cv-job-description">
-                        <ul>
-                            <li>Developed responsive websites for 20+ clients across various industries</li>
-                            <li>Collaborated with design team to implement pixel-perfect UIs using Figma designs</li>
-                            <li>Integrated third-party APIs including payment gateways and social media platforms</li>
-                            <li>Optimized website loading speeds achieving 95+ Google PageSpeed scores</li>
-                            <li>Maintained and updated existing client websites with new features</li>
-                        </ul>
+                    <ul>
+                        <li>Contributed to Kubernetes by implementing localization updates and resolving minor issues in the codebase</li>
+                        <li>Enhanced documentation and usability for broader accessibility through localization efforts</li>
+                        <li>Participated in issue tracking, pull requests, and community discussions on GitHub</li>
+                        <li>Worked within established contribution guidelines, improving familiarity with large-scale open-source workflows</li>
+                        <li>Developed practical experience in debugging, version control, and collaborative software development</li>
+                    </ul>
                     </div>
                     <div class="cv-technologies">
+                        <span class="tech-tag">Git & GitHub</span>
                         <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">SASS</span>
-                        <span class="tech-tag">WordPress</span>
-                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Markdown</span>
+                        <span class="tech-tag">Node.js</span>
+                        
                     </div>
                 </div>
             </div>
 
             <div class="cv-timeline-item">
                 <div class="cv-timeline-date">
-                    <span class="date-range">2020 - 2021</span>
+                    <span class="date-range">10-2022 / 12-2023</span>
                     <span class="duration">1 year</span>
                 </div>
                 <div class="cv-timeline-content">
                     <div class="cv-job-header">
-                        <h3 class="cv-job-title">Junior Web Developer</h3>
+                        <h3 class="cv-job-title">Flutter Developer</h3>
                         <div class="cv-company-info">
-                            <span class="cv-company">StartUp Innovations</span>
-                            <span class="cv-location">Austin, TX</span>
+                            <span class="cv-company">Tutora Academy</span>
+                            <span class="cv-location">Ghunti, Mymensingh</span>
                         </div>
                     </div>
                     <div class="cv-job-description">
-                        <ul>
-                            <li>Built and maintained company website and internal management tools</li>
-                            <li>Learned modern web development frameworks and industry best practices</li>
-                            <li>Participated in agile development processes and daily standups</li>
-                            <li>Assisted in database design and API development using Express.js</li>
-                            <li>Contributed to open-source projects and company technical blog</li>
-                        </ul>
+                    <ul>
+                        <li>Developed and maintained cross-platform mobile and web applications using Flutter</li>
+                         <li>Designed and implemented a server-side admin dashboard to manage application data and workflows</li>
+                        <li>Built responsive UI components and improved user experience across multiple platforms</li>
+                        <li>Created custom UI assets, including icons and animated visuals, to enhance branding and usability</li>
+                    </ul>
                     </div>
                     <div class="cv-technologies">
-                        <span class="tech-tag">HTML/CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Express.js</span>
-                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Riverpod</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cv-timeline-item">
+                <div class="cv-timeline-date">
+                    <span class="date-range">03-2023 / 03-2024</span>
+                    <span class="duration">1 year</span>
+                </div>
+                <div class="cv-timeline-content">
+                    <div class="cv-job-header">
+                        <h3 class="cv-job-title">Programmer</h3>
+                        <div class="cv-company-info">
+                            <span class="cv-company">DhumketuX</span>
+                            <span class="cv-location">Kathgola, Mymensingh</span>
+                        </div>
+                    </div>
+                    <div class="cv-job-description">
+                    <ul>
+                        <li>Worked as a junior programmer intern on research-driven projects at DhumketuX</li>
+                        <li>Contributed to software development efforts during the Putimach-01 rocket initiative</li>
+                        <li>Implemented image processing techniques for obstacle detection in experimental systems</li>
+                        <li>Applied basic machine learning concepts to improve detection accuracy and system behavior</li>
+                        <li>Collaborated with a multidisciplinary team in a fast-paced research environment</li>
+                    </ul>
+                    </div>
+                    <div class="cv-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">YOLO</span>
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">Keras</span>
                         <span class="tech-tag">Git</span>
                     </div>
                 </div>
@@ -331,19 +366,22 @@ const ComponentTemplates = {
             <div class="tool-category">
                 <h3>Development</h3>
                 <div class="tool-tags">
-                    <span class="tool-tag">VS Code</span>
                     <span class="tool-tag">Git</span>
-                    <span class="tool-tag">Docker</span>
                     <span class="tool-tag">Postman</span>
+                    <span class="tool-tag">MongoDB</span>
+                    <span class="tool-tag">MySQL</span>
+                    <span class="tool-tag">AI/ML</span>
+
                 </div>
             </div>
             <div class="tool-category">
-                <h3>Design</h3>
+                <h3>Framework</h3>
                 <div class="tool-tags">
-                    <span class="tool-tag">Figma</span>
-                    <span class="tool-tag">Adobe XD</span>
-                    <span class="tool-tag">Photoshop</span>
-                    <span class="tool-tag">Canva</span>
+                    <span class="tool-tag">React</span>
+                    <span class="tool-tag">Next.js</span>
+                    <span class="tool-tag">Express.js</span>
+                    <span class="tool-tag">Flutter</span>
+                    <span class="tool-tag">SwiftUI</span>
                 </div>
             </div>
             <div class="tool-category">
@@ -353,15 +391,39 @@ const ComponentTemplates = {
                     <span class="tool-tag">Vercel</span>
                     <span class="tool-tag">Netlify</span>
                     <span class="tool-tag">Firebase</span>
+                    <span class="tool-tag">Docker</span>
+                    <span class="tool-tag">Kubernetes</span>
+                    <span class="tool-tag">CI/CD</span>
+
                 </div>
             </div>
             <div class="tool-category">
                 <h3>Testing</h3>
                 <div class="tool-tags">
                     <span class="tool-tag">Jest</span>
-                    <span class="tool-tag">Cypress</span>
                     <span class="tool-tag">Vitest</span>
                     <span class="tool-tag">Playwright</span>
+                    <span class="tool-tag">Unit Testing</span>
+                </div>
+            </div>
+            <div class="tool-category">
+                <h3>Language</h3>
+                <div class="tool-tags">
+                    <span class="tool-tag">C/C++</span>
+                    <span class="tool-tag">JavaScript</span>
+                    <span class="tool-tag">TypeScript</span>
+                    <span class="tool-tag">Elixir</span>
+                    <span class="tool-tag">Python</span>
+                    <span class="tool-tag">Dart</span>
+                </div>
+            </div>
+            <div class="tool-category">
+                <h3>IDE & DevTools</h3>
+                <div class="tool-tags">
+                    <span class="tool-tag">Linux</span>
+                    <span class="tool-tag">Neovim</span>
+                    <span class="tool-tag">Emacs</span>
+                    <span class="tool-tag">Bash Scripting</span>
                 </div>
             </div>
         </div>
@@ -370,7 +432,7 @@ const ComponentTemplates = {
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
 </section>`,
 
-    projects: `<section id="projects">
+  projects: `<section id="projects">
     <p class="section_text_p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="projects-container">
@@ -457,7 +519,7 @@ const ComponentTemplates = {
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
 </section>`,
 
-    contact: `<section id="contact">
+  contact: `<section id="contact">
     <p class="section_text_p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
     
@@ -550,7 +612,7 @@ const ComponentTemplates = {
     </div>
 </section>`,
 
-    footer: `<footer>
+  footer: `<footer>
     <div class="footer-wrapper">
         <div class="footer-content-new">
             <div class="footer-brand-new">
@@ -603,73 +665,75 @@ const ComponentTemplates = {
             <p>&copy; 2024 Sojibul Islam Rana. All Rights Reserved.</p>
         </div>
     </div>
-</footer>`
+</footer>`,
 };
 
 // Component Loader Script
 class ComponentLoader {
-    constructor() {
-        this.components = ComponentTemplates;
-    }
+  constructor() {
+    this.components = ComponentTemplates;
+  }
 
-    loadComponent(componentName) {
-        return this.components[componentName] || '';
-    }
+  loadComponent(componentName) {
+    return this.components[componentName] || "";
+  }
 
-    renderComponent(componentName, targetSelector) {
-        const html = this.loadComponent(componentName);
-        const target = document.querySelector(targetSelector);
-        if (target) {
-            target.innerHTML = html;
-            this.initializeComponent(componentName);
+  renderComponent(componentName, targetSelector) {
+    const html = this.loadComponent(componentName);
+    const target = document.querySelector(targetSelector);
+    if (target) {
+      target.innerHTML = html;
+      this.initializeComponent(componentName);
+    } else {
+      console.warn(
+        `Target selector ${targetSelector} not found for component ${componentName}`,
+      );
+    }
+  }
+
+  initializeComponent(componentName) {
+    // Re-initialize theme icons if navbar is loaded
+    if (componentName === "navbar") {
+      setTimeout(() => {
+        const savedTheme = localStorage.getItem("theme");
+        const themeIcons = document.querySelectorAll(".theme-icon");
+        if (savedTheme === "dark") {
+          themeIcons.forEach((icon) => (icon.textContent = "☀️"));
         } else {
-            console.warn(`Target selector ${targetSelector} not found for component ${componentName}`);
+          themeIcons.forEach((icon) => (icon.textContent = "🌙"));
         }
+      }, 100);
     }
+  }
 
-    initializeComponent(componentName) {
-        // Re-initialize theme icons if navbar is loaded
-        if (componentName === 'navbar') {
-            setTimeout(() => {
-                const savedTheme = localStorage.getItem('theme');
-                const themeIcons = document.querySelectorAll('.theme-icon');
-                if (savedTheme === 'dark') {
-                    themeIcons.forEach(icon => icon.textContent = '☀️');
-                } else {
-                    themeIcons.forEach(icon => icon.textContent = '🌙');
-                }
-            }, 100);
-        }
-    }
+  renderAll() {
+    // Load all components in order
+    this.renderComponent("navbar", "#navbar-container");
+    this.renderComponent("hero", "#hero-container");
+    this.renderComponent("about", "#about-container");
+    this.renderComponent("experience", "#experience-container");
+    this.renderComponent("projects", "#projects-container");
+    this.renderComponent("contact", "#contact-container");
+    this.renderComponent("footer", "#footer-container");
 
-    renderAll() {
-        // Load all components in order
-        this.renderComponent('navbar', '#navbar-container');
-        this.renderComponent('hero', '#hero-container');
-        this.renderComponent('about', '#about-container');
-        this.renderComponent('experience', '#experience-container');
-        this.renderComponent('projects', '#projects-container');
-        this.renderComponent('contact', '#contact-container');
-        this.renderComponent('footer', '#footer-container');
-        
-        // Initialize scripts after all components are loaded
-        setTimeout(() => {
-            if (typeof handleNavbarScroll === 'function') {
-                window.addEventListener('scroll', handleNavbarScroll);
-                handleNavbarScroll();
-            }
-            
-            // Re-attach contact form handler if it exists
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm && typeof handleContactForm === 'function') {
-                contactForm.addEventListener('submit', handleContactForm);
-            }
-        }, 200);
-    }
+    // Initialize scripts after all components are loaded
+    setTimeout(() => {
+      if (typeof handleNavbarScroll === "function") {
+        window.addEventListener("scroll", handleNavbarScroll);
+        handleNavbarScroll();
+      }
+
+      // Re-attach contact form handler if it exists
+      const contactForm = document.getElementById("contactForm");
+      if (contactForm && typeof handleContactForm === "function") {
+        contactForm.addEventListener("submit", handleContactForm);
+      }
+    }, 200);
+  }
 }
 
 // Initialize component loader when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-    const loader = new ComponentLoader();
-    loader.renderAll();
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = new ComponentLoader();
+  loader.renderAll();
 });
