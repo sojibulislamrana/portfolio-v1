@@ -228,7 +228,7 @@ const ComponentTemplates = {
         <div class="cv-timeline">
             <div class="cv-timeline-item">
                 <div class="cv-timeline-date">
-                    <span class="date-range">12-2024 / 12-2025</span>
+                    <span class="date-range">1-2025 / 12-2025</span>
                     <span class="duration">1 year</span>
                 </div>
                 <div class="cv-timeline-content">
