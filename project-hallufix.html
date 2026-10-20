@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HalluFix — Hybrid RAG Framework | Md. Sojibul Islam Rana</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='index.html'">Sojibul Islam Rana</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#tutorials">Tutorials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-switcher" onclick="toggleTheme()" title="Toggle theme">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href='index.html'">Sojibul Islam Rana</div>
+        <div class="hamburger-menu">
+            <div class="theme-switcher mobile" onclick="toggleTheme()" title="Toggle theme">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#tutorials" onclick="toggleMenu()">Tutorials</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail-section">
+        <div class="project-detail-container">
+            <button class="back-btn" onclick="location.href='index.html#projects'">← Back to Projects</button>
+            
+            <div class="project-detail-header">
+                <h1 class="project-detail-title">HalluFix — Evidence-First Hybrid RAG Framework</h1>
+                <div class="project-detail-image">
+                    <img src="./assets/project-hallufix.svg" alt="HalluFix Preview">
+                </div>
+            </div>
+
+            <div class="project-detail-content">
+                <div class="project-detail-info">
+                    <h2>Main Technology Stack</h2>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">FAISS Vector Index</span>
+                        <span class="tech-badge">sentence-transformers</span>
+                        <span class="tech-badge">Cross-Encoder / NLI</span>
+                        <span class="tech-badge">NetworkX Graph Retrieval</span>
+                        <span class="tech-badge">SQLite</span>
+                        <span class="tech-badge">Next.js UI</span>
+                    </div>
+
+                    <h2>Project Overview</h2>
+                    <p>HalluFix is an evidence-first hybrid Retrieval-Augmented Generation (RAG) research system engineered to combat large language model hallucinations. Rather than generating answers without guardrails, HalluFix retrieves multi-hop evidence passages, reranks them through cross-encoders and knowledge graphs, verifies factual claim entailment using Natural Language Inference (NLI), attaches verifiable citations, and explicitly abstains when grounding evidence is inadequate.</p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>Hybrid Retrieval Pipeline:</strong> Combines dense semantic embeddings (FAISS) with lexical BM25 keyword matching for optimal recall.</li>
+                        <li><strong>Knowledge Graph Expansion:</strong> Leverages NetworkX entity relation graphs to retrieve linked multi-hop context.</li>
+                        <li><strong>NLI Claim Verification:</strong> Deconstructs generated claims into verifiable propositions and grades entailment against source texts.</li>
+                        <li><strong>Automated Abstention Mechanism:</strong> Calculates confidence scores and refrains from answering when source evidence falls below strict thresholds.</li>
+                        <li><strong>Source Citation Auditing:</strong> Every verified claim links directly to its source document snippet and similarity score.</li>
+                        <li><strong>Interactive Next.js Dashboard:</strong> Clean visual inspection interface built over a high-performance asynchronous FastAPI backend.</li>
+                    </ul>
+
+                    <h2>Engineering Challenges &amp; Solutions</h2>
+                    <ul>
+                        <li><strong>Latency Reduction in NLI Scoring:</strong> Cross-encoders can be compute-intensive. Solved by implementing batch inference and caching frequently queried vector embeddings in FAISS.</li>
+                        <li><strong>Balancing Abstention vs Answer Rate:</strong> Tuned statistical entailment thresholds to minimize false positives without over-abstaining on nuanced questions.</li>
+                        <li><strong>Graph-Vector Fusion:</strong> Blended graph degree centrality with cosine similarity metrics into a unified reranking function.</li>
+                    </ul>
+                </div>
+
+                <div class="project-links-section">
+                    <h2>Project Links</h2>
+                    <div class="project-action-buttons">
+                        <a href="https://github.com/sojibulislamrana/Hallufix-An-Evidence-First-Hybrid-RAG-Framework-for-Mitigating-AI-Hallucination" class="btn btn-color-2" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+                            View GitHub Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

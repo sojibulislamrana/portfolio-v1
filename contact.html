@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Md. Sojibul Islam Rana | Software Engineer</title>
+    <meta name="description"
+        content="Get in touch with Md. Sojibul Islam Rana for software engineering roles, full-stack development, and open-source collaborations.">
+    <link rel="icon" type="image/png" href="./assets/RanaBW.png">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaqueries.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='index.html'">Sojibul Islam Rana</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#tutorials">Tutorials</a></li>
+                <li><a href="contact.html" style="color: var(--text-color); font-weight: 600;">Contact</a></li>
+            </ul>
+            <div class="theme-switcher" onclick="toggleTheme()" title="Toggle theme">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href='index.html'">Sojibul Islam Rana</div>
+        <div class="hamburger-menu">
+            <div class="theme-switcher mobile" onclick="toggleTheme()" title="Toggle theme">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#tutorials" onclick="toggleMenu()">Tutorials</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Contact Section -->
+    <section class="standalone-contact-section">
+
+
+        <h1 class="title">Contact Me</h1>
+        <p class="contact-page-intro">
+            I'm always interested in discussing software engineering opportunities, full-stack projects, AI systems
+            research, or open-source collaborations. Feel free to reach out via direct channels or send a message below!
+        </p>
+
+        <div class="contact-main-container">
+            <!-- Left Info Column -->
+            <div class="contact-info-section">
+                <div class="contact-intro">
+                    <h3>Let's Connect</h3>
+                    <p>Whether you have a question, a project brief, or an engineering role, I'll be glad to hear from
+                        you.</p>
+                </div>
+
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:sojibulislamrana.dev@gmail.com">sojibulislamrana.dev@gmail.com</a></p>
+                            <span class="contact-note">Direct inquiries &amp; opportunities</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <span class="contact-icon-text">📱</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone / WhatsApp</h4>
+                            <p><a href="tel:+8801960629911">+880 1960-629911</a></p>
+                            <span class="contact-note">Available 9 AM – 8 PM (GMT+6)</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/sojibulislamrana/" target="_blank"
+                                    rel="noopener noreferrer">linkedin.com/in/sojibulislamrana</a></p>
+                            <span class="contact-note">Professional connections</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon">
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/sojibulislamrana" target="_blank"
+                                    rel="noopener noreferrer">github.com/sojibulislamrana</a></p>
+                            <span class="contact-note">Explore open-source repositories</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <img src="./assets/youtube.svg" alt="YouTube icon" class="contact-icon youtube-icon-color">
+                        </div>
+                        <div class="contact-details">
+                            <h4>YouTube</h4>
+                            <p><a href="https://www.youtube.com/channel/UCGV_UOesD1noUN7q6OS6RMw" target="_blank"
+                                    rel="noopener noreferrer">Sojibul Islam Rana</a></p>
+                            <span class="contact-note">Tech tutorials &amp; learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form Column -->
+            <div class="contact-form-section">
+                <h3>Send a Message</h3>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message..." rows="5"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-color-1 form-submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="contact-availability">
+            <div class="availability-item">
+                <span class="availability-status">🟢</span>
+                <span>Available for Full-Stack Developer &amp; Software Engineering roles</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-wrapper">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-brand-logo" onclick="location.href='index.html'">
+                        <span>Md. Sojibul Islam Rana</span>
+                    </div>
+                    <p class="footer-brand-role">Software Engineer | Full-Stack &amp; Systems</p>
+                    <p class="footer-brand-desc">
+                        Building practical software with strong fundamentals, from modern web applications to the
+                        systems underneath.
+                    </p>
+                    <div class="footer-motto-card">
+                        <span class="motto-quote-icon">“</span>
+                        <p class="motto-text">Learn the fundamentals. Build real things. Understand what happens
+                            underneath.</p>
+                    </div>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html#about">About Me</a></li>
+                        <li><a href="index.html#experience">Skills &amp; Journey</a></li>
+                        <li><a href="index.html#projects">Featured Projects</a></li>
+                        <li><a href="index.html#tutorials">Tutorials &amp; Talks</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4 class="footer-col-title">Core Domains</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html#projects">Full-Stack Web (Next.js &amp; React)</a></li>
+                        <li><a href="index.html#projects">Backend &amp; REST APIs (Node &amp; Express)</a></li>
+                        <li><a href="index.html#projects">RAG &amp; AI Systems (FAISS &amp; FastAPI)</a></li>
+                        <li><a href="index.html#experience">Systems &amp; CLI (C, Swift, Linux)</a></li>
+                        <li><a href="index.html#experience">Open-Source (Kubernetes Docs)</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col footer-connect-col">
+                    <h4 class="footer-col-title">Connect</h4>
+                    <div class="footer-social-links">
+                        <a href="https://github.com/sojibulislamrana" target="_blank" rel="noopener noreferrer"
+                            class="footer-social-pill" title="GitHub">
+                            <img src="./assets/github.png" alt="GitHub" class="footer-social-img">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sojibulislamrana/" target="_blank"
+                            rel="noopener noreferrer" class="footer-social-pill" title="LinkedIn">
+                            <img src="./assets/linkedin.png" alt="LinkedIn" class="footer-social-img">
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCGV_UOesD1noUN7q6OS6RMw" target="_blank"
+                            rel="noopener noreferrer" class="footer-social-pill" title="YouTube">
+                            <img src="./assets/youtube.svg" alt="YouTube" class="footer-social-img youtube-icon-color">
+                            <span>YouTube</span>
+                        </a>
+                        <a href="mailto:sojibulislamrana.dev@gmail.com" class="footer-social-pill" title="Email">
+                            <img src="./assets/email.png" alt="Email" class="footer-social-img">
+                            <span>Email</span>
+                        </a>
+                        <a href="tel:+8801960629911" class="footer-social-pill" title="Phone">
+                            <span class="footer-pill-icon">📱</span>
+                            <span>+880 1960-629911</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p class="footer-copyright-text">
+                    &copy; 2026 <strong>Md. Sojibul Islam Rana</strong>. All rights reserved.
+                </p>
+                <div class="footer-bottom-right">
+                    <span class="footer-location-tag">📍 Mymensingh, Bangladesh</span>
+                    <button class="footer-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        title="Back to top">
+                        <span>Back to Top</span>
+                        <span class="arrow-up-icon">↑</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

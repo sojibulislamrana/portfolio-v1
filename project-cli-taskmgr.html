@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome CLI Task Manager | Md. Sojibul Islam Rana</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='index.html'">Sojibul Islam Rana</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#tutorials">Tutorials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-switcher" onclick="toggleTheme()" title="Toggle theme">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href='index.html'">Sojibul Islam Rana</div>
+        <div class="hamburger-menu">
+            <div class="theme-switcher mobile" onclick="toggleTheme()" title="Toggle theme">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#tutorials" onclick="toggleMenu()">Tutorials</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail-section">
+        <div class="project-detail-container">
+            <button class="back-btn" onclick="location.href='index.html#projects'">← Back to Projects</button>
+            
+            <div class="project-detail-header">
+                <h1 class="project-detail-title">Awesome CLI Task Manager</h1>
+                <div class="project-detail-image">
+                    <img src="./assets/project-cli.svg" alt="Awesome CLI Task Manager Preview">
+                </div>
+            </div>
+
+            <div class="project-detail-content">
+                <div class="project-detail-info">
+                    <h2>Main Technology Stack</h2>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">JavaScript (ES6+)</span>
+                        <span class="tech-badge">CLI / Terminal UI</span>
+                        <span class="tech-badge">JSON Storage</span>
+                        <span class="tech-badge">Chalk / CLI Tables</span>
+                        <span class="tech-badge">Commander.js</span>
+                    </div>
+
+                    <h2>Project Overview</h2>
+                    <p>Awesome CLI Task Manager is a keyboard-driven command-line application built for developers who prefer staying inside their terminal. It offers full CRUD operations, hierarchical priorities, tag categorization, deadline tracking, search filtering, task performance analytics, and structured data export.</p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>Fast Terminal Commands:</strong> Add, edit, check off, and delete tasks in milliseconds via intuitive subcommands and flags.</li>
+                        <li><strong>Priority &amp; Status Filtering:</strong> Color-coded tables distinguishing High, Medium, and Low priorities with due date alerts.</li>
+                        <li><strong>Tag &amp; Category Organization:</strong> Group tasks by project tags (e.g., `#fullstack`, `#database`, `#bugfix`).</li>
+                        <li><strong>Productivity Metrics:</strong> Generates completion percentages, pending counts, and velocity metrics directly in the shell.</li>
+                        <li><strong>Lightweight Local Storage:</strong> Atomic JSON persistence with zero external database dependencies.</li>
+                        <li><strong>Data Export:</strong> One-command export to Markdown and CSV formats for reporting.</li>
+                    </ul>
+
+                    <h2>Engineering Challenges &amp; Solutions</h2>
+                    <ul>
+                        <li><strong>Terminal Formatting Consistency:</strong> Formatted table borders and text padding to handle variable terminal window dimensions and ANSI color codes gracefully.</li>
+                        <li><strong>Data Integrity:</strong> Used atomic file write operations to prevent file corruption during sudden terminal exits or shell signals.</li>
+                    </ul>
+                </div>
+
+                <div class="project-links-section">
+                    <h2>Project Links</h2>
+                    <div class="project-action-buttons">
+                        <a href="https://github.com/sojibulislamrana/awesome-cli-taskmgr" class="btn btn-color-2" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+                            View GitHub Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Doc — Real-Time Collaborative Document Editor | Md. Sojibul Islam Rana</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='index.html'">Sojibul Islam Rana</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#tutorials">Tutorials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-switcher" onclick="toggleTheme()" title="Toggle theme">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href='index.html'">Sojibul Islam Rana</div>
+        <div class="hamburger-menu">
+            <div class="theme-switcher mobile" onclick="toggleTheme()" title="Toggle theme">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#tutorials" onclick="toggleMenu()">Tutorials</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail-section">
+        <div class="project-detail-container">
+            <button class="back-btn" onclick="location.href='index.html#projects'">← Back to Projects</button>
+            
+            <div class="project-detail-header">
+                <h1 class="project-detail-title">Live Doc — Real-Time Collaborative Document Editor</h1>
+                <div class="project-detail-image">
+                    <img src="./assets/project-livedocs.png" alt="Live Doc Preview">
+                </div>
+            </div>
+
+            <div class="project-detail-content">
+                <div class="project-detail-info">
+                    <h2>Main Technology Stack</h2>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Next.js</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">Convex Real-Time DB</span>
+                        <span class="tech-badge">Clerk Auth</span>
+                        <span class="tech-badge">Liveblocks</span>
+                        <span class="tech-badge">TipTap Editor</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                    </div>
+
+                    <h2>Project Overview</h2>
+                    <p>Live Doc is a Google Docs-inspired collaborative workspace designed to enable seamless, low-latency document authoring across distributed teams. The architecture combines real-time multi-user cursor broadcasting, conflict-free state synchronization with Convex, rich document formatting through TipTap, and granular organization-level authorization via Clerk.</p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>Real-Time Collaboration:</strong> Concurrent multi-user editing with synchronized cursors and presence indicator avatars.</li>
+                        <li><strong>Rich Text &amp; Formatting:</strong> TipTap editor with headings, code blocks, lists, typography controls, and image embedding.</li>
+                        <li><strong>Interactive Comments &amp; Mentions:</strong> In-document commenting threads with user tag notifications and resolve status.</li>
+                        <li><strong>Workspace &amp; Organization Hierarchy:</strong> Multi-tenant workspaces powered by Clerk organizations.</li>
+                        <li><strong>Templates &amp; Starter Documents:</strong> Ready-made layouts for RFCs, project briefs, and meeting notes.</li>
+                        <li><strong>File Export:</strong> Export documents cleanly to PDF, Markdown, and formatted HTML.</li>
+                    </ul>
+
+                    <h2>Engineering Challenges &amp; Solutions</h2>
+                    <ul>
+                        <li><strong>State Synchronization &amp; Latency:</strong> Coordinated client-side editor operations with Liveblocks presence and Convex document persistence to eliminate desynchronization and typing lag.</li>
+                        <li><strong>Typing Performance:</strong> Optimized TipTap node extensions and minimized re-renders across the document canvas when multiple remote collaborators are actively editing.</li>
+                        <li><strong>Secure Access Control:</strong> Enforced role-based access checks at the Convex database layer to guarantee document privacy across workspaces.</li>
+                    </ul>
+                </div>
+
+                <div class="project-links-section">
+                    <h2>Project Links</h2>
+                    <div class="project-action-buttons">
+                        <a href="https://github.com/sojibulislamrana/live-docs" class="btn btn-color-2" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+                            View GitHub Code
+                        </a>
+                        <a href="https://live-docs-mu-nine.vercel.app" class="btn btn-color-1" target="_blank" rel="noopener noreferrer">
+                            🔗 Open Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

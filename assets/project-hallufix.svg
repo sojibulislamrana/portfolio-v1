@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hf-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#130f26"/>
+      <stop offset="100%" stop-color="#080612"/>
+    </linearGradient>
+    <linearGradient id="hf-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#hf-bg)"/>
+  <g transform="translate(50, 40)">
+    <rect width="700" height="400" rx="16" fill="#1e1838" stroke="rgba(139,92,246,0.3)" stroke-width="1.5"/>
+    <rect width="700" height="44" rx="16" fill="#130e24"/>
+    <rect y="28" width="700" height="16" fill="#130e24"/>
+    <circle cx="24" cy="22" r="6" fill="#ff5f56"/>
+    <circle cx="44" cy="22" r="6" fill="#ffbd2e"/>
+    <circle cx="64" cy="22" r="6" fill="#27c93f"/>
+    <text x="90" y="27" fill="#c4b5fd" font-family="sans-serif" font-size="13" font-weight="bold">HalluFix — Evidence-First Hybrid RAG Framework</text>
+    <rect x="550" y="10" width="120" height="24" rx="6" fill="rgba(139,92,246,0.2)" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="610" y="26" fill="#e9d5ff" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">FastAPI · FAISS</text>
+    
+    <!-- Query Box -->
+    <rect x="24" y="58" width="652" height="48" rx="10" fill="#130e24" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="44" y="82" fill="#a78bfa" font-family="monospace" font-size="12">QUERY:</text>
+    <text x="100" y="82" fill="#f3e8ff" font-family="sans-serif" font-size="13">Verify medical claim citations from multi-hop scientific literature</text>
+    <rect x="570" y="66" width="90" height="32" rx="6" fill="url(#hf-purple)"/>
+    <text x="615" y="86" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Run RAG</text>
+    
+    <!-- 3 Pipeline Columns -->
+    <g transform="translate(24, 120)">
+      <!-- Stage 1: Retrieval -->
+      <rect width="204" height="250" rx="10" fill="#151028" stroke="rgba(255,255,255,0.06)"/>
+      <rect width="204" height="36" rx="10" fill="#211a3d"/>
+      <rect y="24" width="204" height="12" fill="#211a3d"/>
+      <text x="18" y="24" fill="#c4b5fd" font-family="sans-serif" font-size="12" font-weight="bold">1. Hybrid Retrieval</text>
+      <text x="18" y="58" fill="#a78bfa" font-family="sans-serif" font-size="11">FAISS Dense Index</text>
+      <text x="18" y="76" fill="#94a3b8" font-family="sans-serif" font-size="11">• 45,000 Embeddings</text>
+      <text x="18" y="94" fill="#94a3b8" font-family="sans-serif" font-size="11">• BM25 Lexical Keyword</text>
+      <text x="18" y="112" fill="#94a3b8" font-family="sans-serif" font-size="11">• Reciprocal Rank Fusion</text>
+      <rect x="18" y="140" width="168" height="60" rx="6" fill="#221b40"/>
+      <text x="28" y="160" fill="#c4b5fd" font-family="monospace" font-size="10">Top Doc [sim: 0.942]</text>
+      <text x="28" y="178" fill="#9ca3af" font-family="monospace" font-size="9">PMID_34821: Evidence confirmed...</text>
+      <rect x="18" y="214" width="168" height="24" rx="4" fill="#10b981" fill-opacity="0.2"/>
+      <text x="102" y="230" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">✓ Retrieved 15 Passages</text>
+
+      <!-- Stage 2: Verification -->
+      <rect x="224" width="204" height="250" rx="10" fill="#151028" stroke="rgba(255,255,255,0.06)"/>
+      <rect x="224" width="204" height="36" rx="10" fill="#211a3d"/>
+      <rect x="224" y="24" width="204" height="12" fill="#211a3d"/>
+      <text x="242" y="24" fill="#f472b6" font-family="sans-serif" font-size="12" font-weight="bold">2. NLI Claim Verification</text>
+      <text x="242" y="58" fill="#f472b6" font-family="sans-serif" font-size="11">Cross-Encoder / DeBERTa</text>
+      <text x="242" y="80" fill="#cbd5e1" font-family="sans-serif" font-size="11">Entailment: 94.6%</text>
+      <rect x="242" y="90" width="168" height="8" rx="4" fill="#332752"/>
+      <rect x="242" y="90" width="159" height="8" rx="4" fill="#10b981"/>
+      <text x="242" y="116" fill="#cbd5e1" font-family="sans-serif" font-size="11">Contradiction: 1.2%</text>
+      <rect x="242" y="126" width="168" height="8" rx="4" fill="#332752"/>
+      <rect x="242" y="126" width="12" height="8" rx="4" fill="#ef4444"/>
+      <text x="242" y="152" fill="#cbd5e1" font-family="sans-serif" font-size="11">Neutral: 4.2%</text>
+      <rect x="242" y="162" width="168" height="8" rx="4" fill="#332752"/>
+      <rect x="242" y="162" width="25" height="8" rx="4" fill="#f59e0b"/>
+      <rect x="242" y="214" width="168" height="24" rx="4" fill="#8b5cf6" fill-opacity="0.2"/>
+      <text x="326" y="230" fill="#c4b5fd" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Claims Fully Grounded</text>
+
+      <!-- Stage 3: Decision & Guardrail -->
+      <rect x="448" width="204" height="250" rx="10" fill="#151028" stroke="rgba(255,255,255,0.06)"/>
+      <rect x="448" width="204" height="36" rx="10" fill="#211a3d"/>
+      <rect x="448" y="24" width="204" height="12" fill="#211a3d"/>
+      <text x="466" y="24" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="bold">3. Abstention &amp; Output</text>
+      <text x="466" y="58" fill="#38bdf8" font-family="sans-serif" font-size="11">Hallucination Risk Gate</text>
+      <rect x="466" y="74" width="168" height="60" rx="6" fill="#0d1117"/>
+      <text x="476" y="94" fill="#10b981" font-family="sans-serif" font-size="10" font-weight="bold">STATUS: VERIFIED ANSWER</text>
+      <text x="476" y="110" fill="#9ca3af" font-family="sans-serif" font-size="9">Confidence &gt; Threshold (0.85)</text>
+      <text x="476" y="124" fill="#9ca3af" font-family="sans-serif" font-size="9">Zero unsupported extrapolations</text>
+      <rect x="466" y="146" width="168" height="56" rx="6" fill="#1f2430"/>
+      <text x="476" y="166" fill="#cbd5e1" font-family="sans-serif" font-size="10">Auto-Abstain Mode: ON</text>
+      <text x="476" y="182" fill="#94a3b8" font-family="sans-serif" font-size="9">Refuses if evidence &lt; threshold</text>
+      <rect x="466" y="214" width="168" height="24" rx="4" fill="#0284c7" fill-opacity="0.2"/>
+      <text x="550" y="230" fill="#7dd3fc" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Next.js Dashboard API</text>
+    </g>
+  </g>
+</svg>

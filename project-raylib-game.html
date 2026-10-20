@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raylib Match-3 Game in C | Md. Sojibul Islam Rana</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='index.html'">Sojibul Islam Rana</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#tutorials">Tutorials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-switcher" onclick="toggleTheme()" title="Toggle theme">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href='index.html'">Sojibul Islam Rana</div>
+        <div class="hamburger-menu">
+            <div class="theme-switcher mobile" onclick="toggleTheme()" title="Toggle theme">
+                <div class="theme-toggle-switch">
+                    <div class="theme-toggle-slider">
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#tutorials" onclick="toggleMenu()">Tutorials</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail-section">
+        <div class="project-detail-container">
+            <button class="back-btn" onclick="location.href='index.html#projects'">← Back to Projects</button>
+            
+            <div class="project-detail-header">
+                <h1 class="project-detail-title">Raylib Match-3 Game in C</h1>
+                <div class="project-detail-image">
+                    <img src="./assets/project-raylib.svg" alt="Raylib Match-3 Game Preview">
+                </div>
+            </div>
+
+            <div class="project-detail-content">
+                <div class="project-detail-info">
+                    <h2>Main Technology Stack</h2>
+                    <div class="tech-stack">
+                        <span class="tech-badge">C (C99 Standard)</span>
+                        <span class="tech-badge">Raylib</span>
+                        <span class="tech-badge">OpenGL / Hardware Accel</span>
+                        <span class="tech-badge">Make</span>
+                        <span class="tech-badge">CMake</span>
+                        <span class="tech-badge">Native Graphics</span>
+                    </div>
+
+                    <h2>Project Overview</h2>
+                    <p>Raylib Match-3 Game is a native 2D puzzle game implemented in C99 using the Raylib graphics library. Built without heavy commercial game engines like Unity or Godot, this project focuses on low-level game loops, manual 2D array matrix state management, fluid frame-independent animation interpolation, and zero-overhead native compilation.</p>
+
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>Native C99 Architecture:</strong> Written in clean, modular C with explicit memory management and zero garbage collection spikes.</li>
+                        <li><strong>Grid Logic &amp; Match Detection:</strong> Robust algorithms checking horizontal, vertical, and combo cascade matches across dynamic grid dimensions.</li>
+                        <li><strong>Hardware-Accelerated 2D Rendering:</strong> Smooth 60fps rendering leveraging Raylib's OpenGL backend.</li>
+                        <li><strong>Cascade &amp; Fall Animations:</strong> Tweening animations for falling gems and clearing sequences.</li>
+                        <li><strong>Score &amp; Multiplier Engine:</strong> Tracks chain reaction cascades and combo multipliers.</li>
+                        <li><strong>Cross-Platform Build System:</strong> Compiles seamlessly via standard Makefile and modern CMake configurations across macOS and Linux.</li>
+                    </ul>
+
+                    <h2>Engineering Challenges &amp; Solutions</h2>
+                    <ul>
+                        <li><strong>Cascade Chain Reaction Handling:</strong> Structured a state machine separating player input, match scanning, gem falling, and empty cell replenishing to avoid infinite loops during multi-chain explosions.</li>
+                        <li><strong>Frame-Independent Timing:</strong> Implemented delta time (`GetFrameTime()`) calculations so movement speeds remain identical regardless of display refresh rates (60Hz vs 120Hz ProMotion).</li>
+                    </ul>
+                </div>
+
+                <div class="project-links-section">
+                    <h2>Project Links</h2>
+                    <div class="project-action-buttons">
+                        <a href="https://github.com/sojibulislamrana/Raylib-match-3-game" class="btn btn-color-2" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/github.png" alt="GitHub" class="btn-icon">
+                            View GitHub Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

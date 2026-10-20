@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rl-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#rl-bg)"/>
+  <g transform="translate(50, 40)">
+    <rect width="700" height="400" rx="16" fill="#111114" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <!-- Game Window Title Bar -->
+    <rect width="700" height="38" rx="16" fill="#27272a"/>
+    <rect y="24" width="700" height="14" fill="#27272a"/>
+    <circle cx="22" cy="19" r="6" fill="#ff5f56"/>
+    <circle cx="42" cy="19" r="6" fill="#ffbd2e"/>
+    <circle cx="62" cy="19" r="6" fill="#27c93f"/>
+    <text x="350" y="24" fill="#f4f4f5" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">Raylib Match-3 Game (C99 / OpenGL / Make)</text>
+    
+    <!-- Game Board & UI -->
+    <g transform="translate(50, 60)">
+      <!-- Gem Grid (6x5) -->
+      <rect width="360" height="300" rx="12" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
+      <!-- Gem slots -->
+      <!-- Row 1 -->
+      <circle cx="40" cy="35" r="18" fill="#ef4444"/>
+      <circle cx="96" cy="35" r="18" fill="#3b82f6"/>
+      <circle cx="152" cy="35" r="18" fill="#10b981"/>
+      <circle cx="208" cy="35" r="18" fill="#f59e0b"/>
+      <circle cx="264" cy="35" r="18" fill="#8b5cf6"/>
+      <circle cx="320" cy="35" r="18" fill="#ef4444"/>
+      <!-- Row 2 -->
+      <circle cx="40" cy="95" r="18" fill="#3b82f6"/>
+      <circle cx="96" cy="95" r="18" fill="#3b82f6"/>
+      <circle cx="152" cy="95" r="18" fill="#3b82f6" stroke="#ffffff" stroke-width="3" stroke-dasharray="4"/>
+      <circle cx="208" cy="95" r="18" fill="#10b981"/>
+      <circle cx="264" cy="95" r="18" fill="#ef4444"/>
+      <circle cx="320" cy="95" r="18" fill="#f59e0b"/>
+      <!-- Row 3 -->
+      <circle cx="40" cy="155" r="18" fill="#10b981"/>
+      <circle cx="96" cy="155" r="18" fill="#8b5cf6"/>
+      <circle cx="152" cy="155" r="18" fill="#ef4444"/>
+      <circle cx="208" cy="155" r="18" fill="#f59e0b"/>
+      <circle cx="264" cy="155" r="18" fill="#10b981"/>
+      <circle cx="320" cy="155" r="18" fill="#8b5cf6"/>
+      <!-- Row 4 -->
+      <circle cx="40" cy="215" r="18" fill="#f59e0b"/>
+      <circle cx="96" cy="215" r="18" fill="#10b981"/>
+      <circle cx="152" cy="215" r="18" fill="#8b5cf6"/>
+      <circle cx="208" cy="215" r="18" fill="#3b82f6"/>
+      <circle cx="264" cy="215" r="18" fill="#ef4444"/>
+      <circle cx="320" cy="215" r="18" fill="#3b82f6"/>
+      <!-- Row 5 -->
+      <circle cx="40" cy="270" r="18" fill="#8b5cf6"/>
+      <circle cx="96" cy="270" r="18" fill="#ef4444"/>
+      <circle cx="152" cy="270" r="18" fill="#3b82f6"/>
+      <circle cx="208" cy="270" r="18" fill="#10b981"/>
+      <circle cx="264" cy="270" r="18" fill="#f59e0b"/>
+      <circle cx="320" cy="270" r="18" fill="#ef4444"/>
+      
+      <!-- Right Game Panel -->
+      <g transform="translate(390, 0)">
+        <rect width="210" height="300" rx="12" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
+        <text x="20" y="35" fill="#a1a1aa" font-family="monospace" font-size="12">SCORE</text>
+        <text x="20" y="70" fill="#fbbf24" font-family="monospace" font-size="28" font-weight="bold">18,450</text>
+        
+        <text x="20" y="110" fill="#a1a1aa" font-family="monospace" font-size="12">COMBO</text>
+        <text x="20" y="135" fill="#34d399" font-family="monospace" font-size="18" font-weight="bold">3x MATCH! 🔥</text>
+        
+        <text x="20" y="175" fill="#a1a1aa" font-family="monospace" font-size="12">MOVES LEFT</text>
+        <text x="20" y="200" fill="#38bdf8" font-family="monospace" font-size="18" font-weight="bold">24</text>
+        
+        <rect x="16" y="235" width="178" height="44" rx="8" fill="#27272a"/>
+        <text x="105" y="255" fill="#f4f4f5" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">Native C / Raylib</text>
+        <text x="105" y="270" fill="#a1a1aa" font-family="monospace" font-size="9" text-anchor="middle">FPS: 60 | No Engine Overhead</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -10,6 +10,12 @@ function toggleMenu(){
 
 function openProjectDetails(projectId) {
     const projectPages = {
+        'live-docs': 'project-live-docs.html',
+        'unishop': 'project-unishop.html',
+        'hallufix': 'project-hallufix.html',
+        'onething': 'project-onething.html',
+        'cli-taskmgr': 'project-cli-taskmgr.html',
+        'raylib-game': 'project-raylib-game.html',
         'social-events': 'project-social-events.html',
         'hero-io': 'project-hero-io.html',
         'style-decor': 'project-style-decor.html'
@@ -18,6 +24,35 @@ function openProjectDetails(projectId) {
     if (projectPages[projectId]) {
         window.location.href = projectPages[projectId];
     }
+}
+
+function filterProjects(category, buttonElement) {
+    const cards = document.querySelectorAll('.project-card');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // Update active button state
+    if (buttons && buttonElement) {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        buttonElement.classList.add('active');
+    }
+
+    // Filter cards
+    cards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        if (category === 'all' || cardCat === category) {
+            card.style.display = 'flex';
+            setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 50);
+        } else {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(10px)';
+            setTimeout(() => {
+                card.style.display = 'none';
+            }, 250);
+        }
+    });
 }
 
 function toggleTheme() {
@@ -42,7 +77,7 @@ function handleNavbarScroll() {
     const scrollY = window.scrollY;
     
     if (desktopNav && hamburgerNav) {
-        if (scrollY > 100) {
+        if (scrollY > 60) {
             desktopNav.classList.add('scrolled');
             hamburgerNav.classList.add('scrolled');
         } else {
@@ -113,7 +148,7 @@ function handleContactForm(event) {
     btnText.style.display = 'none';
     btnLoading.style.display = 'inline';
     
-    // Simulate form submission (replace with actual API call)
+    // Simulate form submission
     setTimeout(() => {
         // Reset button state
         submitBtn.disabled = false;
@@ -125,7 +160,7 @@ function handleContactForm(event) {
         
         // Reset form
         form.reset();
-    }, 2000);
+    }, 1200);
 }
 
 // Load saved theme on page load

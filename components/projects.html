@@ -1,86 +1,318 @@
 <section id="projects">
     <p class="section_text_p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
+    <h1 class="title">Featured Projects</h1>
+    
     <div class="projects-container">
+        <!-- Category Filter Tabs -->
+        <div class="project-filters">
+            <button class="filter-btn active" onclick="filterProjects('all', this)">All Projects</button>
+            <button class="filter-btn" onclick="filterProjects('fullstack', this)">Full-Stack Web</button>
+            <button class="filter-btn" onclick="filterProjects('ai', this)">AI &amp; Systems</button>
+            <button class="filter-btn" onclick="filterProjects('native', this)">Native &amp; CLI</button>
+        </div>
+
         <div class="projects-grid">
-            <div class="project-card">
+            <!-- Project 1: Live Doc -->
+            <div class="project-card" data-category="fullstack">
                 <div class="project-image-wrapper">
-                    <img src="./assets/project-1.png" alt="Social Event Platform" class="project-img">
+                    <img src="./assets/project-livedocs.png" alt="Live Doc - Real-Time Collaborative Document Editor" class="project-img">
                     <div class="project-overlay">
                         <div class="project-links">
-                            <a href="https://github.com/sojibulislamrana/social-events-client" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/sojibulislamrana/live-docs" class="project-link" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
                                 <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
                             </a>
-                            <a href="https://social-events-platform-1fe94.web.app/upcoming-events" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://live-docs-mu-nine.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer" title="View Live Demo">
                                 <span>🔗</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="project-content">
-                    <h2 class="project-title">Social Event Platform</h2>
-                    <p class="project-description">A comprehensive social events platform for discovering, creating, and managing events with real-time updates and social features.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">Firebase</span>
-                        <span class="tech-badge">Node.js</span>
+                    <div class="project-header-top">
+                        <span class="project-badge-tag">Flagship Web</span>
+                        <div class="project-direct-links">
+                            <a href="https://github.com/sojibulislamrana/live-docs" target="_blank" rel="noopener noreferrer" class="icon-link-sm" title="GitHub Code">Code ↗</a>
+                            <a href="https://live-docs-mu-nine.vercel.app" target="_blank" rel="noopener noreferrer" class="icon-link-sm demo-link" title="Live Demo">Live Demo ↗</a>
+                        </div>
                     </div>
-                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('social-events')">View Details</button>
+                    <h2 class="project-title">Live Doc — Real-Time Collaborative Editor</h2>
+                    <p class="project-description">A Google Docs-style collaborative editor featuring live multi-cursor broadcasting, threaded comments, mentions, templates, document import/export, and Convex real-time sync.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Next.js</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">Convex</span>
+                        <span class="tech-badge">Liveblocks</span>
+                        <span class="tech-badge">TipTap</span>
+                    </div>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('live-docs')">View Case Study</button>
                 </div>
             </div>
             
-            <div class="project-card">
+            <!-- Project 2: UniShop -->
+            <div class="project-card" data-category="fullstack">
+                <div class="project-image-wrapper">
+                    <img src="./assets/project-unishop.png" alt="UniShop - Campus E-Commerce Platform" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/sojibulislamrana/unishop-c" class="project-link" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+                                <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
+                            </a>
+                            <a href="https://unishop-client.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer" title="View Live Demo">
+                                <span>🔗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header-top">
+                        <span class="project-badge-tag">E-Commerce</span>
+                        <div class="project-direct-links">
+                            <a href="https://github.com/sojibulislamrana/unishop-c" target="_blank" rel="noopener noreferrer" class="icon-link-sm" title="GitHub Code">Code ↗</a>
+                            <a href="https://unishop-client.vercel.app" target="_blank" rel="noopener noreferrer" class="icon-link-sm demo-link" title="Live Demo">Live Demo ↗</a>
+                        </div>
+                    </div>
+                    <h2 class="project-title">UniShop — Campus E-Commerce</h2>
+                    <p class="project-description">Modern, minimalist e-commerce platform tailored for university students with direct-to-dorm delivery, persistent shopping cart, promo codes, and real-time revenue dashboard.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Next.js 16</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                    </div>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('unishop')">View Case Study</button>
+                </div>
+            </div>
+
+            <!-- Project 3: HalluFix -->
+            <div class="project-card" data-category="ai">
+                <div class="project-image-wrapper">
+                    <img src="./assets/project-hallufix.svg" alt="HalluFix - Evidence-First Hybrid RAG Framework" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/sojibulislamrana/Hallufix-An-Evidence-First-Hybrid-RAG-Framework-for-Mitigating-AI-Hallucination" class="project-link" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+                                <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header-top">
+                        <span class="project-badge-tag ai-tag">AI / Systems</span>
+                        <div class="project-direct-links">
+                            <a href="https://github.com/sojibulislamrana/Hallufix-An-Evidence-First-Hybrid-RAG-Framework-for-Mitigating-AI-Hallucination" target="_blank" rel="noopener noreferrer" class="icon-link-sm" title="GitHub Code">Code ↗</a>
+                        </div>
+                    </div>
+                    <h2 class="project-title">HalluFix — Hybrid RAG Framework</h2>
+                    <p class="project-description">An evidence-first hybrid RAG research system designed to reduce AI hallucinations through FAISS dense retrieval, NLI claim verification, and automated abstention.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">FAISS</span>
+                        <span class="tech-badge">NLI</span>
+                        <span class="tech-badge">Next.js</span>
+                    </div>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('hallufix')">View Case Study</button>
+                </div>
+            </div>
+
+            <!-- Project 4: hero.io -->
+            <div class="project-card" data-category="fullstack">
                 <div class="project-image-wrapper">
                     <img src="./assets/project-2.png" alt="hero.io" class="project-img">
                     <div class="project-overlay">
                         <div class="project-links">
-                            <a href="https://github.com/sojibulislamrana/hero.io" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/sojibulislamrana/hero.io" class="project-link" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
                                 <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
                             </a>
-                            <a href="https://github.com/sojibulislamrana/cardio" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/sojibulislamrana/cardio" class="project-link" target="_blank" rel="noopener noreferrer" title="Live Demo">
                                 <span>🔗</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="project-content">
+                    <div class="project-header-top">
+                        <span class="project-badge-tag">Interactive App</span>
+                        <div class="project-direct-links">
+                            <a href="https://github.com/sojibulislamrana/hero.io" target="_blank" rel="noopener noreferrer" class="icon-link-sm" title="GitHub Code">Code ↗</a>
+                            <a href="https://github.com/sojibulislamrana/cardio" target="_blank" rel="noopener noreferrer" class="icon-link-sm demo-link" title="Live Demo">Live Demo ↗</a>
+                        </div>
+                    </div>
                     <h2 class="project-title">hero.io</h2>
-                    <p class="project-description">An interactive hero-based application with dynamic features and engaging user interface for enhanced user experience.</p>
+                    <p class="project-description">An interactive hero-based web application with dynamic features, smooth DOM animations, and engaging responsive user interface.</p>
                     <div class="project-tech">
                         <span class="tech-badge">JavaScript</span>
                         <span class="tech-badge">HTML5</span>
                         <span class="tech-badge">CSS3</span>
                     </div>
-                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('hero-io')">View Details</button>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('hero-io')">View Case Study</button>
                 </div>
             </div>
-            
-            <div class="project-card">
+
+            <!-- Project 5: StyleDecor -->
+            <div class="project-card" data-category="fullstack">
                 <div class="project-image-wrapper">
                     <img src="./assets/project-3.png" alt="StyleDecor" class="project-img">
                     <div class="project-overlay">
                         <div class="project-links">
-                            <a href="https://github.com/sojibulislamrana/styleDecor-C.git" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/sojibulislamrana/styleDecor-C.git" class="project-link" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
                                 <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
                             </a>
-                            <a href="https://style-decor-532c3.web.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://style-decor-532c3.web.app/" class="project-link" target="_blank" rel="noopener noreferrer" title="Live Demo">
                                 <span>🔗</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="project-content">
+                    <div class="project-header-top">
+                        <span class="project-badge-tag">Design Platform</span>
+                        <div class="project-direct-links">
+                            <a href="https://github.com/sojibulislamrana/styleDecor-C.git" target="_blank" rel="noopener noreferrer" class="icon-link-sm" title="GitHub Code">Code ↗</a>
+                            <a href="https://style-decor-532c3.web.app/" target="_blank" rel="noopener noreferrer" class="icon-link-sm demo-link" title="Live Demo">Live Demo ↗</a>
+                        </div>
+                    </div>
                     <h2 class="project-title">StyleDecor</h2>
-                    <p class="project-description">An elegant interior design and decoration platform showcasing beautiful home styling solutions and design inspirations.</p>
+                    <p class="project-description">An elegant interior design and home decoration platform showcasing styling solutions, catalog browsing, and design inspirations.</p>
                     <div class="project-tech">
                         <span class="tech-badge">React</span>
                         <span class="tech-badge">Firebase</span>
                         <span class="tech-badge">CSS3</span>
                     </div>
-                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('style-decor')">View Details</button>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('style-decor')">View Case Study</button>
+                </div>
+            </div>
+
+            <!-- Project 6: Social Event Platform -->
+            <div class="project-card" data-category="fullstack">
+                <div class="project-image-wrapper">
+                    <img src="./assets/project-1.png" alt="Social Event Platform" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/sojibulislamrana/social-events-client" class="project-link" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+                                <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
+                            </a>
+                            <a href="https://social-events-platform-1fe94.web.app/upcoming-events" class="project-link" target="_blank" rel="noopener noreferrer" title="Live Demo">
+                                <span>🔗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header-top">
+                        <span class="project-badge-tag">Events Web</span>
+                        <div class="project-direct-links">
+                            <a href="https://github.com/sojibulislamrana/social-events-client" target="_blank" rel="noopener noreferrer" class="icon-link-sm" title="GitHub Code">Code ↗</a>
+                            <a href="https://social-events-platform-1fe94.web.app/upcoming-events" target="_blank" rel="noopener noreferrer" class="icon-link-sm demo-link" title="Live Demo">Live Demo ↗</a>
+                        </div>
+                    </div>
+                    <h2 class="project-title">Social Event Platform</h2>
+                    <p class="project-description">A comprehensive social events platform for discovering, creating, and managing community events with real-time updates and social features.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">Node.js</span>
+                    </div>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('social-events')">View Case Study</button>
+                </div>
+            </div>
+
+            <!-- Project 7: One Thing -->
+            <div class="project-card" data-category="native">
+                <div class="project-image-wrapper">
+                    <img src="./assets/project-onething.svg" alt="One Thing - macOS Menu Bar App" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/sojibulislamrana/OneThing-MacOS-menubar-app" class="project-link" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+                                <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header-top">
+                        <span class="project-badge-tag native-tag">Native macOS</span>
+                        <div class="project-direct-links">
+                            <a href="https://github.com/sojibulislamrana/OneThing-MacOS-menubar-app" target="_blank" rel="noopener noreferrer" class="icon-link-sm" title="GitHub Code">Code ↗</a>
+                        </div>
+                    </div>
+                    <h2 class="project-title">One Thing — macOS Menu Bar App</h2>
+                    <p class="project-description">A lightweight native macOS utility keeping a single priority or note constantly accessible from the menu bar, with launch-at-login and minimal memory footprint.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Swift</span>
+                        <span class="tech-badge">macOS</span>
+                        <span class="tech-badge">AppKit</span>
+                        <span class="tech-badge">SwiftUI</span>
+                        <span class="tech-badge">Makefile</span>
+                    </div>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('onething')">View Case Study</button>
+                </div>
+            </div>
+
+            <!-- Project 8: Awesome CLI Task Manager -->
+            <div class="project-card" data-category="native">
+                <div class="project-image-wrapper">
+                    <img src="./assets/project-cli.svg" alt="Awesome CLI Task Manager" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/sojibulislamrana/awesome-cli-taskmgr" class="project-link" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+                                <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header-top">
+                        <span class="project-badge-tag native-tag">CLI Tool</span>
+                        <div class="project-direct-links">
+                            <a href="https://github.com/sojibulislamrana/awesome-cli-taskmgr" target="_blank" rel="noopener noreferrer" class="icon-link-sm" title="GitHub Code">Code ↗</a>
+                        </div>
+                    </div>
+                    <h2 class="project-title">Awesome CLI Task Manager</h2>
+                    <p class="project-description">Keyboard-driven terminal task manager supporting task priorities, tags, due dates, interactive search, task metrics, and lightweight JSON storage.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">CLI / Terminal</span>
+                        <span class="tech-badge">JSON Storage</span>
+                    </div>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('cli-taskmgr')">View Case Study</button>
+                </div>
+            </div>
+
+            <!-- Project 9: Raylib Match-3 Game -->
+            <div class="project-card" data-category="native">
+                <div class="project-image-wrapper">
+                    <img src="./assets/project-raylib.svg" alt="Raylib Match-3 Game" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/sojibulislamrana/Raylib-match-3-game" class="project-link" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+                                <img src="./assets/github.png" alt="GitHub" class="project-link-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header-top">
+                        <span class="project-badge-tag native-tag">Systems &amp; C</span>
+                        <div class="project-direct-links">
+                            <a href="https://github.com/sojibulislamrana/Raylib-match-3-game" target="_blank" rel="noopener noreferrer" class="icon-link-sm" title="GitHub Code">Code ↗</a>
+                        </div>
+                    </div>
+                    <h2 class="project-title">Raylib Match-3 Game</h2>
+                    <p class="project-description">A 2D match-3 puzzle game engineered natively in C with Raylib, featuring zero external engine overhead, smooth 60fps animations, and Make/CMake build workflows.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">C (C99)</span>
+                        <span class="tech-badge">Raylib</span>
+                        <span class="tech-badge">Make</span>
+                        <span class="tech-badge">CMake</span>
+                    </div>
+                    <button class="btn btn-color-1 project-details-btn" onclick="openProjectDetails('raylib-game')">View Case Study</button>
                 </div>
             </div>
         </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#tutorials'">
 </section>
